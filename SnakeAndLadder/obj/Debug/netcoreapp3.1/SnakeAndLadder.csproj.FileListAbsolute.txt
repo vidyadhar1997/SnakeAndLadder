@@ -10,3 +10,4 @@ D:\bridgeLabzFellowship\SnakeAndLadder\SnakeAndLadder\obj\Debug\netcoreapp3.1\Sn
 D:\bridgeLabzFellowship\SnakeAndLadder\SnakeAndLadder\obj\Debug\netcoreapp3.1\SnakeAndLadder.dll
 D:\bridgeLabzFellowship\SnakeAndLadder\SnakeAndLadder\obj\Debug\netcoreapp3.1\SnakeAndLadder.pdb
 D:\bridgeLabzFellowship\SnakeAndLadder\SnakeAndLadder\obj\Debug\netcoreapp3.1\SnakeAndLadder.genruntimeconfig.cache
+D:\bridgeLabzFellowship\SnakeAndLadder\SnakeAndLadder\obj\Debug\netcoreapp3.1\SnakeAndLadder.csprojAssemblyReference.cache
