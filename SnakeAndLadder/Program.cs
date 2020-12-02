@@ -19,37 +19,43 @@ namespace SnakeAndLadder
             return random.Next(1, 4);
         }
 
-        public static int playerOption()
-        {
-            while (currentPoistion < END_POSTION-1)
-            { 
-                int throwDices = throwDice();
-                int selectdOption = checkForOption();
-                if (selectdOption == 2)
-                {
-                    currentPoistion += throwDices;
-                }
-                else if (selectdOption == 3)
-                {
-                    currentPoistion -= throwDices;
-                    if (currentPoistion < 0)
-                    {
-                        currentPoistion = START_POISTION;
-                    }
-                }
-                else
-                {
-                    //Console.WriteLine("Do nothing player stay in same poistion");
-                }
-            }
-            return currentPoistion;
-        }
-      
         static void Main(string[] args)
         {
-            Console.WriteLine("start postion is: "+START_POISTION);
-            Console.WriteLine("end postion is: " + END_POSTION);
-            Console.WriteLine("current poistion is= " + playerOption());
+            while (currentPoistion < END_POSTION - 1)
+            {
+                int throwDices = throwDice();
+                int selectdOption = checkForOption();
+                switch (selectdOption)
+                {
+                    case 1:
+                        Console.WriteLine("Player got ladder");
+                        currentPoistion += throwDices;
+                        if (currentPoistion > END_POSTION)
+                        {
+                            currentPoistion -= throwDices;
+                        }
+                        break;
+                    case 2:
+                        Console.WriteLine("Player got snake");
+                        if ((currentPoistion - throwDices) < 0)
+                        {
+                            currentPoistion = 0;
+                        }
+                        else
+                        {
+                            currentPoistion -= throwDices;
+                        }
+                        break;
+                    case 3:
+                        Console.WriteLine("player not play");
+                        break;
+                    default:
+                        break;
+                }
+
+
+            }
         }
+
     }
 }
