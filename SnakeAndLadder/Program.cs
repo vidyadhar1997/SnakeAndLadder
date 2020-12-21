@@ -33,7 +33,7 @@ namespace SnakeAndLadder
                 switch (selectdOption)
                 {
                     case 1:
-                        Console.WriteLine("Player got ladder");
+                        Console.WriteLine("Player got the ladder");
                         playerOnePosition +=playerOnethrowDices;
                         playerTwoPosition +=playerTwothrowDices;
                         if (playerOnePosition > WIN_POSITION)
